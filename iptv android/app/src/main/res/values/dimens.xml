@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tv_padding_horizontal">32dp</dimen>
+    <dimen name="tv_padding_vertical">24dp</dimen>
+    <dimen name="tv_card_elevation">6dp</dimen>
+    <dimen name="tv_card_corner_radius">12dp</dimen>
+    <dimen name="tv_channel_item_width">170dp</dimen>
+    <dimen name="tv_channel_item_height">130dp</dimen>
+    <dimen name="tv_focus_stroke_width">3dp</dimen>
+</resources>

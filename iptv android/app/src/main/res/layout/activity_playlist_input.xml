@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="48dp"
+        android:paddingVertical="32dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_button"
+                android:text="◀ Geri"
+                android:textColor="@color/white"
+                android:focusable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Oynatma Listesi Yapılandırması"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Mode Selector Tabs: M3U URL vs Xtream Codes -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/tabM3U"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button"
+                android:text="M3U / M3U8 Çalma Listesi URL"
+                android:textColor="@color/white"
+                android:focusable="true" />
+
+            <Button
+                android:id="@+id/tabXtream"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/bg_button"
+                android:text="Xtream Codes API Girişi"
+                android:textColor="@color/text_secondary"
+                android:focusable="true" />
+        </LinearLayout>
+
+        <!-- M3U Section -->
+        <LinearLayout
+            android:id="@+id/sectionM3U"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/m3u_url_label"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edtM3uUrl"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_channel_card"
+                android:hint="@string/m3u_hint"
+                android:textColorHint="@color/text_hint"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:paddingHorizontal="16dp"
+                android:inputType="textUri"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/btnSaveM3U"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_button"
+                android:text="M3U Çalma Listesini Yükle"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:focusable="true" />
+        </LinearLayout>
+
+        <!-- Xtream Codes Section (Initially hidden or toggleable) -->
+        <LinearLayout
+            android:id="@+id/sectionXtream"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/xtream_server"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edtXtreamServer"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_channel_card"
+                android:hint="http://server.iptvdomain.com:8080"
+                android:textColorHint="@color/text_hint"
+                android:textColor="@color/white"
+                android:paddingHorizontal="16dp"
+                android:inputType="textUri" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/xtream_username"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edtXtreamUser"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_channel_card"
+                android:hint="Kullanıcı adı"
+                android:textColorHint="@color/text_hint"
+                android:textColor="@color/white"
+                android:paddingHorizontal="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/xtream_password"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edtXtreamPass"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_channel_card"
+                android:hint="Şifre"
+                android:textColorHint="@color/text_hint"
+                android:textColor="@color/white"
+                android:inputType="textPassword"
+                android:paddingHorizontal="16dp" />
+
+            <Button
+                android:id="@+id/btnSaveXtream"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_button"
+                android:text="Xtream Hesabı ile Giriş Yap"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:focusable="true" />
+        </LinearLayout>
+
+        <!-- Quick Demo / Free Channels Button -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="28dp"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hızlı Başlangıç (Önceden Tanımlı Ücretsiz Test Kanalları):"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnLoadDemoTurkey"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_button"
+                android:text="🇹🇷 Ücretsiz Türkiye Ulusal ve Haber Kanallarını Yükle"
+                android:textColor="@color/accent_blue"
+                android:textStyle="bold"
+                android:focusable="true" />
+
+            <Button
+                android:id="@+id/btnLoadDemoWorld"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_button"
+                android:text="🌍 Uluslararası Ücretsiz Test Kanallarını Yükle"
+                android:textColor="@color/white"
+                android:focusable="true" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

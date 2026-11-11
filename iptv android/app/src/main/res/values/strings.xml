@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Nova IPTV Box</string>
+    <string name="live_tv">Canlı TV</string>
+    <string name="movies">Filmler</string>
+    <string name="series">Diziler</string>
+    <string name="favorites">Favoriler</string>
+    <string name="settings">Ayarlar</string>
+    <string name="categories">Kategoriler</string>
+    <string name="all_channels">Tüm Kanallar</string>
+    <string name="channels">Kanallar</string>
+    <string name="search_hint">Kanal veya içerik ara…</string>
+    <string name="no_channels">Kanal bulunamadı</string>
+    <string name="loading">Yükleniyor…</string>
+    <string name="playlist_setup">Oynatma Listesi Ekle</string>
+    <string name="m3u_url_label">M3U / M3U8 URL Bağlantısı</string>
+    <string name="m3u_hint">https://ornek.com/playlist.m3u</string>
+    <string name="xtream_api_label">Xtream Codes API Girişi</string>
+    <string name="xtream_server">Sunucu URL (http://dns:port)</string>
+    <string name="xtream_username">Kullanıcı Adı</string>
+    <string name="xtream_password">Şifre</string>
+    <string name="btn_save_load">Kaydet ve Yükle</string>
+    <string name="btn_load_demo">Ücretsiz Test Kanallarını Yükle</string>
+    <string name="btn_change_playlist">Çalma Listesini Değiştir</string>
+    <string name="remote_hint_ok">OK: Oynat / Menü</string>
+    <string name="remote_hint_ch">YUKARI / AŞAĞI: Kanal Değiştir</string>
+    <string name="remote_hint_back">GERİ: Geri Dön</string>
+    <string name="aspect_ratio">Görüntü Oranı</string>
+    <string name="aspect_fit">Orantılı (Fit)</string>
+    <string name="aspect_fill">Tam Ekran (Fill)</string>
+    <string name="aspect_zoom">Yakınlaştır (Zoom)</string>
+    <string name="aspect_16_9">16:9</string>
+    <string name="aspect_4_3">4:3</string>
+    <string name="stream_error">Yayın yüklenemedi. Tekrar deneniyor…</string>
+    <string name="reconnecting">Yeniden bağlanılıyor…</string>
+    <string name="added_to_favorites">Favorilere eklendi</string>
+    <string name="removed_from_favorites">Favorilerden çıkarıldı</string>
+    <string name="channel_count">%1$d Kanal</string>
+    <string name="now_playing">Şimdi Oynatılıyor</string>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Backgrounds -->
+    <color name="bg_main">#0B0E14</color>
+    <color name="bg_surface">#151922</color>
+    <color name="bg_card">#1B2230</color>
+    <color name="bg_card_focused">#2A364F</color>
+    <color name="bg_overlay">#CC0B0E14</color>
+    <color name="bg_osd_bar">#D9111622</color>
+
+    <!-- TV Accents -->
+    <color name="accent_blue">#00E5FF</color>
+    <color name="accent_blue_glow">#6600E5FF</color>
+    <color name="accent_gold">#FFD600</color>
+    <color name="accent_red">#FF3D57</color>
+    <color name="accent_green">#00E676</color>
+
+    <!-- Text -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#9DA8BA</color>
+    <color name="text_hint">#5B6577</color>
+
+    <!-- Borders & Dividers -->
+    <color name="border_card">#273142</color>
+    <color name="border_focused">#00E5FF</color>
+    <color name="divider">#1F2736</color>
+
+    <!-- Transparent / Shadow -->
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+</resources>
